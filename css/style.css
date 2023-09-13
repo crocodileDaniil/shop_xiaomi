@@ -1,16 +1,64 @@
 *,
 *::after,
-*::before{
-    box-sizing: border-box;
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #131313;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none; /* убрать базовый стиль (точки что это список) */
+}
+
+li {
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit; /* наследование цвета от родителя*/
 }
 
 .container {
-    max-width: 1220px;
-    padding: 0 10px;
-    margin: 0 auto;
-    background-color: rgb(255, 140, 0);
+  max-width: 1220px;
+  padding: 0 10px;
+  margin: 0 auto; /* отсуп ввер/низ лево/права*/
+  /* background-color: rgb(255, 140, 0); */
 }
 
-.header__inner{
-    display: flex;
+.header__inner {
+  display: flex;
+  justify-content: space-between; /* элементы разошлись по бокам */
+  align-items: center; /* элементы внутри по центру */
+}
+.menu {
+  margin-right: 71px;
+}
+
+.menu__list {
+  display: flex;
+}
+
+.menu__item + .menu__item {
+  padding-left: 10px;
+}
+
+.menu__link {
+  text-transform: uppercase;
+  padding: 43px 20px;
+  transition: all.2s;
+}
+.menu__link:hover {
+  background-color: #131313;
+  color: white;
+  box-shadow: 0px 5px 40px 0px rgba(0, 0, 0, 0.5);
 }
