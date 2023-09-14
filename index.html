@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Josefin+Sans:ital,wght@0,300;0,400;1,300&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/slick.css" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -40,7 +41,7 @@
       <div class="container">
         <div class="bike__inner">
           <div class="bike__column">
-            <h1 class="bike__titile">Xiaomi Himo C26</h1>
+            <h1 class="bike__title">Xiaomi Himo C26</h1>
             <h3 class="bike__subtitle">Электрический велосипед</h3>
             <p class="bike__text">
               Полная свобода передвижения и надежный транспорт для путешествий
@@ -57,27 +58,38 @@
             </p>
             <a class="bike__link" href="#">ЗАКАЗАТЬ</a>
           </div>
-          <div class="bike__column">
+          <div class="bike__column bike__column-slider">
             <div class="bike__slider">
-              <img src="images/bike-1.jpg" alt="" class="bike-slider__item" />
               <img src="images/bike-2.jpg" alt="" class="bike-slider__item" />
               <img src="images/bike-3.jpg" alt="" class="bike-slider__item" />
               <img src="images/bike-4.jpg" alt="" class="bike-slider__item" />
+              <img src="images/bike-5.jpg" alt="" class="bike-slider__item" />
             </div>
             <ul class="bike__list">
-              <li class="bike__list-item">до 100км <span>запас хода</span></li>
               <li class="bike__list-item">
-                25 км/ч <span>макс скорость</span>
+                <span class="bike__list-num">до 100км</span>
+                 <span class="bike__list-text">запас хода</span>
               </li>
               <li class="bike__list-item">
-                3 режима езды
-                <span>механический, гибридный, электрический</span>
+               <span class="bike__list-num">25 км/ч</span> 
+                 <span class="bike__list-text">макс скорость</span>
               </li>
-              <li class="bike__list-item">25 кг<span>вес</span></li>
+              <li class="bike__list-item">
+               <span class="bike__list-num">3 режима езды</span> 
+                <span class="bike__list-text">механический, гибридный, электрический</span>
+              </li>
+              <li class="bike__list-item">
+                <span class="bike__list-num">25кг </span>
+                <span class="bike__list-text">вес</span></li>
             </ul>
           </div>
         </div>
       </div>
     </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script src="js/slick.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
