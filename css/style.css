@@ -6,13 +6,13 @@
 
 body {
   font-family: "Inter", sans-serif;
-  font-family: "Josefin Sans", sans-serif;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
   color: #131313;
 }
-img{
+img {
   max-width: 600px;
 }
 ul {
@@ -71,24 +71,21 @@ a {
 .bike__inner {
   display: flex;
   justify-content: space-between;
-  
-  
 }
 
-.bike__column-slider{
- 
+.bike__column-slider {
   margin-left: 30px;
   max-width: 630px;
 }
 
-.bike__title{
+.bike__title {
   font-weight: 700;
   font-size: 64px;
   line-height: 77px;
   margin: 60px 0 5px 0;
 }
 
-.bike__subtitle{
+.bike__subtitle {
   font-size: 32px;
   font-weight: 400;
   margin: 0 0 60px 0;
@@ -111,22 +108,28 @@ a {
   font-size: 20px;
   line-height: 24px;
   letter-spacing: 1.1em;
-  margin: 80px 0 0 0 ;
+  margin: 80px 0 0 0;
 }
 
 .bike__link:hover {
   background-color: red;
   box-shadow: 0px 5px 40px 0px rgba(253, 1, 1, 0.5);
+  transition: 2s;
+  transform: scale(1.2);
 }
 
-.bike__slider .slick-dots{
+.bike__slider .slick-dots {
   right: 0;
-  top:52px
+  top: 52px;
+}
+
+.bike__slider:hover {
+  transition: 2s;
+  transform: scale(1.17);
 }
 
 .slick-dots {
   position: absolute;
- 
 }
 
 .slick-dots li + li {
@@ -141,11 +144,11 @@ a {
   width: 2px;
   height: 25px;
   border-radius: 7px;
-  cursor: pointer;  /* изменение курсора при наведении*/
-  transition: all .3s;
+  cursor: pointer; /* изменение курсора при наведении*/
+  transition: all 0.3s;
 }
 .slick-dots button:hover,
-.slick-active button{
+.slick-active button {
   background-color: red;
 }
 
@@ -154,7 +157,6 @@ a {
   justify-content: space-around;
   margin-top: 35px;
   align-items: center;
-  
 }
 
 .bike__list-item {
@@ -167,17 +169,66 @@ a {
   min-height: 60px;
 }
 
+.bike__list-item:hover {
+  transition: 0.7s;
+  transform: scale(1.5);
+  background-color: #6f6f6f;
+  color: #f6f6f6;
+  padding: 10px;
+  max-width: 200px;
+}
+
 bike__list-num {
-  
 }
 
 .bike__list-text {
   text-transform: none;
-  text-align:center ;
+  text-align: center;
   /* display: block; */
   font-weight: 400;
   font-size: 12px;
   line-height: 15px;
   min-width: 160px;
   margin: auto 0;
+}
+
+.info {
+  margin-bottom: 150px;
+}
+
+.info__inner {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.info__item {
+  max-width: 490px;
+}
+.info__img {
+  margin-right: 60px;
+  max-width: 570px;
+  object-fit: cover; /* нормальное растяжение*/
+}
+
+.info__item + .info__item {
+  margin-top: 50px;
+  /* border: 2px solid black; */
+}
+
+.info__item-titile {
+  max-width: 490px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  margin: 0 0 10px;
+}
+
+.info__item-text {
+  max-width: 450px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
 }
