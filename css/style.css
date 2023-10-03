@@ -371,3 +371,38 @@ bike__list-num {
 .form__text-color {
   margin-bottom: 10px;
 }
+
+.form__label-box {
+  display: flex;
+}
+
+.form__input-radio {
+}
+
+.form__bike {
+  display: none;
+}
+
+.form__radio-style {
+  border-radius: 30px;
+  width: 80px;
+  height: 12px;
+  flex-shrink: 0;
+}
+
+.form__radio-style--grey {
+  background-color: #6f6f6f;
+}
+
+.form__radio-style--white {
+  background-color: #fff;
+  border: 1px solid #6f6f6f;
+}
+
+.form__radio-style--red {
+  background-color: #ff4040;
+}
+
+.form__label-color + .form__label-color {
+  padding-left: 23px;
+}
