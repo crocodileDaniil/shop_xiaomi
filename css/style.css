@@ -12,9 +12,9 @@ body {
   line-height: 17px;
   color: #131313;
 }
-img {
+/* img {
   max-width: 600px;
-}
+} */
 ul {
   padding: 0;
   margin: 0;
@@ -28,6 +28,10 @@ li {
 a {
   text-decoration: none;
   color: inherit; /* наследование цвета от родителя*/
+}
+
+p {
+  margin: 0;
 }
 
 .container {
@@ -57,12 +61,13 @@ a {
 .menu__link {
   text-transform: uppercase;
   padding: 43px 20px;
-  transition: all.2s;
+  transition: all 0.8s;
 }
 .menu__link:hover {
   background-color: #131313;
   color: white;
   box-shadow: 0px 5px 40px 0px rgba(0, 0, 0, 0.5);
+  transition: 1s;
 }
 
 .bike {
@@ -145,7 +150,7 @@ a {
   height: 25px;
   border-radius: 7px;
   cursor: pointer; /* изменение курсора при наведении*/
-  transition: all 0.3s;
+  transition: all 0.3s; /* время эффекта */
 }
 .slick-dots button:hover,
 .slick-active button {
@@ -170,8 +175,8 @@ a {
 }
 
 .bike__list-item:hover {
-  transition: 0.7s;
-  transform: scale(1.5);
+  transition: 0.7s; /* длительность эффекта */
+  transform: scale(1.5); /* увеличениее размера */
   background-color: #6f6f6f;
   color: #f6f6f6;
   padding: 10px;
@@ -231,4 +236,138 @@ bike__list-num {
   font-style: normal;
   font-weight: 400;
   line-height: 120%;
+}
+
+.characteristics {
+  margin-bottom: 150px;
+}
+
+.characteristics__head {
+  margin: 0 0 40px 0;
+  font-size: 16px;
+
+  font-weight: 700;
+
+  text-transform: uppercase;
+}
+
+.characteristics__inner {
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+.characteristics__img {
+  align-self: center;
+}
+
+.characteristics__items {
+  /* max-width: 570px; */
+  flex-basis: 570px;
+  margin-right: 60px;
+}
+
+.characteristics__list + .characteristics__list {
+  margin-top: 31px;
+}
+
+.characteristics__title {
+  padding: 2px 0 3px 0;
+  background-color: #131313;
+  color: #f6f6f6;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.characteristics__line {
+  display: flex;
+  /* justify-content: space-between; */
+  padding-top: 5px;
+}
+
+.characteristics_name {
+  /* max-width: 285px; */
+  flex-basis: 285px;
+  line-height: 120%;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  padding-right: 25px;
+}
+
+.characteristics__descr {
+  /* max-width: 285px; */
+  flex-basis: 285px;
+  line-height: 120%;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.slider {
+  margin-bottom: 50px;
+}
+
+.slider__item {
+  padding-left: 50px;
+}
+
+.slider__items .slick-dots {
+  top: 0;
+  left: 0;
+}
+
+.price {
+  margin-bottom: 100px;
+}
+.form {
+  max-width: 420px;
+}
+
+.form__title {
+  margin-bottom: 40px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.form__text {
+  max-width: 300px;
+  margin-bottom: 30px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 16.8px */
+}
+
+.form__input-name,
+.form__input-phone {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #131313;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.form__input-name::placeholder,
+.form__input-phone::placeholder,
+.form__text-color {
+  color: #6f6f6f;
+  opacity: 0.5; /* прозрачность  */
+}
+
+/* такие стили на наведение не работают*/
+/* .form__input-name:hover,
+.form__input-phone:hover {
+  border: 1px solid rgb(251, 0, 33);  
+  transition: 5s;
+} */
+
+.form__text-color {
+  margin-bottom: 10px;
 }
