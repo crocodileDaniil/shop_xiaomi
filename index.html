@@ -330,20 +330,25 @@
                 <input class="form__input-radio" type="radio" name="radio" />
                 <div class="form__bike">
                   <img src="images/bike-grey.jpg" class="form__bike-img" />
-                  <p class="form__bike-price">33999 rub</p>
+                  <p class="form__bike-price"><span>33999 rub</span></p>
                 </div>
                 <div class="form__radio-style form__radio-style--grey"></div>
               </label>
 
               <label class="form__label-color">
-                <input class="form__input-radio" type="radio" name="radio" />
+                <input
+                  class="form__input-radio"
+                  type="radio"
+                  name="radio"
+                  checked
+                />
                 <div class="form__bike">
                   <img
                     src="images/bike-white.jpg"
                     alt=""
                     class="form__bike-img"
                   />
-                  <p class="form__bike-price">32999 rub</p>
+                  <p class="form__bike-price"><span>32999 rub</span></p>
                 </div>
                 <div class="form__radio-style form__radio-style--white"></div>
               </label>
@@ -356,7 +361,7 @@
                     alt=""
                     class="form__bike-img"
                   />
-                  <p class="form__bike-price">35999 rub</p>
+                  <p class="form__bike-price"><span>35999 rub</span></p>
                 </div>
                 <div class="form__radio-style form__radio-style--red"></div>
               </label>
@@ -366,6 +371,39 @@
         </div>
       </div>
     </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <a href="#" class="footer__link">Политика конфиденциальности</a>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link">
+              <img class="footer_social-img" src="images/facebook.svg" alt="" />
+            </a>
+            <a href="#" class="footer__social-link">
+              <img
+                class="footer_social-img"
+                src="images/instagram.svg"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="footer__contact">
+            <a href="tel:+380506777777" class="footer__contact-link">
+              <img class="footer__contact-img" src="images/phone.svg" alt="" />
+              <span>+38 050 677 77 77</span>
+            </a>
+            <a
+              href="mailto:elektrobikeukr@gmail.com"
+              class="footer__contact-link"
+            >
+              <img class="footer__contact-img" src="images/mail.svg" alt="" />
+              <span> elektrobikeukr@gmail.com </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="js/slick.js"></script>

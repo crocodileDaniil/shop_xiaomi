@@ -126,6 +126,7 @@ p {
 .bike__slider .slick-dots {
   right: 0;
   top: 52px;
+  padding-right: 10px;
 }
 
 .bike__slider:hover {
@@ -334,6 +335,7 @@ bike__list-num {
   font-weight: 700;
   line-height: normal;
   text-transform: uppercase;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .form__text {
@@ -374,13 +376,58 @@ bike__list-num {
 
 .form__label-box {
   display: flex;
+  margin-bottom: 50px;
 }
 
 .form__input-radio {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden; /* если элемент переполняется, то содержимое не оходит за границы*/
+  clip: rect(0 0 0 0); /* область взаимодействия - здесь отсутствует */
+}
+
+.price__inner {
+  position: relative;
 }
 
 .form__bike {
   display: none;
+  position: absolute; /* для изменения позиции*/
+  right: 0;
+  top: 0;
+}
+
+.form__bike-price {
+  color: #131313;
+  position: absolute;
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  top: 0;
+  left: 0px;
+  width: 220px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ff4040;
+  border-radius: 100%;
+  transform: translateX(-50%);
+  /*Смещение по оси Х чтобы цена была левее и не трогать свойства left */
+}
+
+.form__bike-price::after {
+  content: "";
+  position: absolute;
+  width: 220px;
+  height: 100px;
+  border: 1px solid #ff4040;
+  border-radius: 100%;
+  top: 10px;
+  left: 0;
 }
 
 .form__radio-style {
@@ -388,6 +435,7 @@ bike__list-num {
   width: 80px;
   height: 12px;
   flex-shrink: 0;
+  cursor: pointer;
 }
 
 .form__radio-style--grey {
@@ -405,4 +453,107 @@ bike__list-num {
 
 .form__label-color + .form__label-color {
   padding-left: 23px;
+}
+
+.form__btn {
+  max-width: 420px;
+  max-height: 80px;
+  padding: 28px 81px;
+  flex-shrink: 0;
+  color: #fff;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 22px;
+  text-transform: uppercase;
+  border: 1px solid #131313;
+  background: #131313;
+  cursor: pointer;
+}
+
+/* .form__btn:hover {
+transform: scale(1.2);
+transition: 1s;
+background-color: bisque;
+color: #136429;
+border-radius: 1ch;
+border-color: #f0df26;
+} */
+
+.form__btn:hover {
+  transform: scale(1.2);
+  transition: 1s;
+  background-color: #ff4040;
+  color: #ffffff;
+  border-radius: 1ch;
+  border-color: #920404;
+  box-shadow: 0 0 50px 5px #ff4040;
+}
+
+.form__radio-style:hover {
+  border: 2px solid rgb(114, 3, 111);
+}
+
+.form__input-radio:checked + .form__bike {
+  display: block;
+  transition: 1s;
+}
+
+.footer {
+  background-color: #131313;
+}
+
+.footer__inner {
+  background-color: #131313;
+  color: #f6f6f6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+
+.footer__link {
+  color: #f6f6f6;
+  width: 185px;
+  height: 15px;
+  flex-shrink: 0;
+  text-decoration: underline;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: lowercase;
+}
+
+.footer__social-link + .footer__social-link {
+  padding-left: 25px;
+}
+
+.footer__contact {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start; */
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: lowercase;
+}
+
+.footer__contact-link{
+  display: flex;
+  align-items: center;
+}
+
+.footer__contact-img {
+margin-right: 5px;
+}
+
+.footer__contact-link + .footer__contact-link {
+padding-top: 10px;
 }
